@@ -1,0 +1,20 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "strict": true,  // Adding strict mode for better type-checking
+    "esModuleInterop": true,  // Ensures compatibility with CommonJS modules
+    "skipLibCheck": true  // Skip type checking of declaration files for faster builds
+  }
+}
